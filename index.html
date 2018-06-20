@@ -295,132 +295,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/20/Binder-hook/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="林长健">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://commons.wikimedia.org/wiki/File:APK_format_icon.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="林长健">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/06/20/Binder-hook/" itemprop="url">Binder hook</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-20T17:34:24+08:00">
-                2018-06-20
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="Hook机制之Binder-Hook"><a href="#Hook机制之Binder-Hook" class="headerlink" title="Hook机制之Binder-Hook"></a>Hook机制之Binder-Hook</h1><p>Android系统通过Binder机制给应用程序提供了一系列的系统服务，诸如<code>ActivityManagerService</code>，<code>ClipboardManager</code>， <code>AudioManager</code>等；这些广泛存在系统服务给应用程序提供了诸如任务管理，音频，视频等异常强大的功能。</p>
-<p>插件框架作为各个插件的管理者，为了使得插件能够<strong>无缝地</strong>使用这些系统服务，自然会对这些系统服务做出一定的改造(Hook)，使得插件的开发和使用更加方便，从而大大降低插件的开发和维护成本。比如，Hook住<code>ActivityManagerService</code>可以让插件无缝地使用<code>startActivity</code>方法而不是使用特定的方式(比如that语法)来启动插件或者主程序的任意界面。</p>
-<p>我们把这种Hook系统服务的机制称之为Binder Hook，因为本质上这些服务提供者都是存在于系统各个进程的Binder对象。因此，要理解接下来的内容必须了解Android的Binder机制，可以参考我之前的文章<a href="http://weishu.me/2016/01/12/binder-index-for-newer/" target="_blank" rel="noopener">Binder学习指南</a></p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/06/20/Binder-hook/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/20/Android插件化框架系列/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -824,7 +698,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
